@@ -11,7 +11,7 @@ function getHero() {
 hero = getHero()
 
 
-function addTwo(num: number) {
+function addTwo(num: number): number {
     return num + 2
 }
 
@@ -27,8 +27,8 @@ const signUpUser = (
     userName: string,
     email: string,
     isPaid: boolean
-) => { 
-    if(userName !== "ameer" || !email) {
+) => {
+    if (userName !== "ameer" || !email) {
         console.log("Details not provided")
     }
 }
@@ -37,3 +37,10 @@ function loginUser(userName: string, email: string, isPaid: boolean = false) { }
 
 signUpUser("ameer98", "ameer@yahoomail.org", true)
 loginUser("ameer", "ameer@yahoomail.org")
+
+
+const heros = ["thor", "spiderman", "ironman"]
+
+for (let i = 0; i < heros.length; i++) {
+    console.log(heros[i])
+}
